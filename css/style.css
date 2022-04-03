@@ -1,0 +1,79 @@
+body {
+  background-color: #F7F8FC;
+  font-size: .875rem;
+}
+
+
+/**** Overwrite Boostrap Default Css ****/
+/*.bg-light {background-color: #363740!important;}*/
+.nav-item {margin-bottom: 20px;}
+
+/*Navigation*/
+.sidebar {background-color: #363740!important;}
+hr {background-color: #A4A6B3;}
+.profile {width: 30px;}
+
+
+.overview_block {
+  display: block!important;
+}
+
+.today, .yesterday {position: relative;}
+.today:before { 
+  content: ""; 
+  display: block; 
+  height: 2px; 
+  width: 50%; 
+  position: absolute; 
+  background-color: #3751FF; 
+  right: 0; 
+  left: -25px; 
+  top: 50%;
+}
+.yesterday:before { 
+  content: ""; 
+  display: block; 
+  height: 2px; 
+  width: 35%; 
+  position: absolute; 
+  background-color: #DFE0EB; 
+  right: 10; 
+  left: -25px; 
+  top: 50%;
+}
+
+.function_box {
+  border-bottom: 1px solid #DFE0EB;
+}
+
+.unsolved_block {
+  padding: 11px;
+}
+
+.unsolved_block .card {
+  margin-right: 20px;
+}
+
+.list-group-flush {
+  padding: 8px 0px;
+}
+@media (min-width: 576px) { 
+  
+  .boxes_block .card{
+    margin: 0px 20px;
+  }
+  .boxes_block .card:hover{
+    border-color: #3751ff !important;
+    color: #3751ff !important;
+  }
+
+  .boxes_block .card:hover p.text-muted{
+    color: #3751ff !important;
+    font-weight: bold;
+  }
+
+  .border-l {
+    border-left: 1px solid #DFE0EB;
+  }
+
+}
